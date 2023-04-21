@@ -1,0 +1,124 @@
+
+.set ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.set li {
+    width: 80px;
+    height: 20px;
+    background-color: blueviolet;
+    border:black solid;
+    margin:auto;
+    padding-left:4%;
+
+}
+
+/* flex */
+
+.flexContainer {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.set {
+    background-color: rgb(252, 135, 205);
+    border:black solid;
+    padding:5%;
+     
+    margin:1%;
+    flex:12%; 
+    max-width:12%; 
+
+/*
+    margin:auto;
+    flex-grow: 1;  */
+}
+
+#ADiv {
+    order:1;
+}
+
+#BDiv {
+    order:4;
+}
+
+#CDiv {
+    order:2;
+}
+
+#DDiv {
+    order:3;
+}
+
+/* for tablet size */
+@media screen and (max-width: 1000px) {
+    .set {
+        flex:30%;
+        max-width: 50%;
+    }
+
+    #ADiv {
+        order:1;
+    }
+    
+    #BDiv {
+        order:2;
+    }
+    
+    #CDiv {
+        order:3;
+    }
+    
+    #DDiv {
+        order:4;
+    }
+    
+}
+
+/* for mobile size */
+@media screen and (max-width:600px) {
+    .set {
+        flex:100%;
+        max-width: 100%;
+    }
+
+    #ADiv {
+        order:1;
+    }
+    
+    #BDiv {
+        order:2;
+    }
+    
+    #CDiv {
+        order:3;
+    }
+    
+    #DDiv {
+        order:4;
+    }
+}
+
+.set li:hover {
+    background-color: rgb(21, 244, 154);
+}
+
+
+#MyTitle {
+    text-align: center;
+    margin-left:2%; 
+    margin-right:2%; 
+}
+
+#MyFoot {
+    text-align: center;
+    margin-left:2%; 
+    margin-right:2%; 
+
+}
